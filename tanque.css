@@ -1,0 +1,53 @@
+.container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+}
+.titulo-tanque{
+    /* border: 1px solid white; */
+
+}
+.input-tanque{
+border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, rgb(26, 26, 26), rgb(98, 98, 245));
+}
+.input-tanque input{
+    margin: 1rem;
+    outline: none;
+    border-radius: 3rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 60%;
+    border: none;
+}
+.input-tanque input::placeholder{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input-tanque button{
+    margin: 1rem;
+    border: 4px solid white;
+    border-color: white(0, 0, 0);
+    border-radius: 3rem;
+    padding: 1rem;
+    color: white;
+    overflow: hidden;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+}
+.input-tanque button:hover{
+    color: black;
+    background-color: white;
+}

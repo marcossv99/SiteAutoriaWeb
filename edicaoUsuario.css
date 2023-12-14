@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.formulario-edicao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    padding: 2rem;
+    width: 75%;
+    border-radius: 4rem 4rem;
+    margin: 1rem;
+    background-color: rgb(187, 85, 85);
+
+}
+.formulario-edicao input {
+    margin: 1rem;
+    border-radius: 1rem 1rem;
+    padding: 1.0rem;
+    width: 75%;
+    color: white;
+    border: none;
+    background-color: black;
+    outline: none;
+}
+.botoes-edicao{
+    border: none;
+    margin: 0.5rem;
+    width: 90%;
+    height: 5.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.botoes-edicao button {
+    width: 45%;
+    height: 5.5vh;
+    color: white;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-radius: 1rem; 
+    overflow: hidden;
+}

@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.container{
+    border: 0px solid white;
+}
+.wel-container{
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    margin-left: 1.5rem;
+}
+.wel-container p{
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0px solid white;
+    position: relative;
+    text-shadow: 0 0 1px transparent;
+}
+.wel-container p, .wel-container p:focus, .wel-container p:active{
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+.container-button{
+    overflow: hidden;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 86%;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 3rem;
+}
+.container-button p{
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+.logo{
+    background-image: url(./fishblue.png);
+    z-index: -1;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 10rem;
+    margin-top: 5rem;
+    filter: blur(5px);
+}
+.container-button h2{
+    font-size: 1.9rem;
+    border: none;
+}
+.texto{
+    border: 0px solid black;
+    font-size: 150%;
+    padding: 5vh;
+    height: 5vh;
+}
+.container-button input{
+    border:none;
+    margin: 0.2rem;
+    padding: 0.8rem;
+    width: 90%;
+    font-size: 1.5rem;
+    border-radius: 2rem 2rem;
+    background-color: rgb(34, 34, 34);
+    outline: none;
+}
+.container-button button{
+    overflow: hidden;
+    margin-bottom: 2rem;
+    width: 95%;
+    height: 6vh;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 3rem 3rem;
+    background-color: transparent;
+    border: 2px solid rgb(0, 153, 255);
+}
+.container-button button:hover{
+    background: rgb(0, 153, 255);
+    color: black;
+}

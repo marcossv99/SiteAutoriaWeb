@@ -1,0 +1,131 @@
+
+.welcome{
+    /* border: 0px solid white; */
+    padding: 0.5rem;
+}
+.welcome h2{
+    margin: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+.menu-op1{
+    border: none;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 20vh;
+    border-radius: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+
+}
+.menu-op2{
+    border: none;
+    margin-top: 5rem;
+    border-radius: 2rem 2rem;
+    width: 70%;
+    background-image: url(./background-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.menu-op2{
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+#personalize-btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./personalizarwhite.png);
+    background-size: 3.5rem;
+    background-repeat: no-repeat;
+    max-width: 80%;
+    background-color: transparent;
+    margin-top: -1.5rem;
+    border: none;
+    margin-top: -2rem;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
+.container-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#add-criadouro{
+    border: 5px solid red;
+    margin-top: -2rem;
+    font-size: 2em;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.menu-op1 h2{
+    margin: 5rem;
+    padding: 1rem;
+    margin-right: 6rem;
+    margin-top: 5rem;
+    color: white;
+    
+}
+#add{
+    margin: 1.0rem;
+    color: white;
+}
+#usuario{
+    border: 5px solid white;
+    background-image: url(usuario.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    margin: 1rem;
+    margin-top: 2.5rem; 
+}
+.add-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+#add-remedio, #add-racao, #add-tanque{
+    border: 5px solid red;
+    margin: 0.5rem;
+    margin-top: -0.6rem;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+#add-remedio{
+    background-image: url(./remedyfishwhite.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#add-racao{
+    background-image: url(./fishfoodwhite.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#add-tanque{
+    background-image: url(./water-tank.png);
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+

@@ -1,0 +1,54 @@
+.container-cadastro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    flex-direction: column;
+
+}
+.container-cadastro input::placeholder{
+    color: white;
+    font-size: 1.0rem;
+}
+.container-cadastro input{
+    width: 90%;
+
+}
+
+.cadastro{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5rem;
+}
+.titulo{
+    border: none;
+    border-bottom: 5px solid white;
+}
+.titulo h2{
+    margin: -0.1rem;
+    margin-top: 7rem;
+    color: white;
+}
+#cancelar-btn{
+    margin-top: -5.0rem;
+    width: 40%;
+    margin-bottom: 6rem;
+    border-radius: 2rem 2rem;
+    width: 50%;
+    height: 6vh;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: white;
+}
+#cadastro-btn{
+    margin: 5rem;
+    margin-top: 1rem;
+    width: 40%;
+    border-radius: 2rem 2rem;
+    margin-bottom: 6rem;
+    width: 50%;
+    height: 6vh;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: white;
+}

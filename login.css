@@ -1,0 +1,41 @@
+.container-login{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    flex-direction: column;
+
+}
+.container-login input::placeholder{
+    color: white;
+    font-size: 1.0rem;
+}
+.container-login input{
+    width: 50%;
+    color: white;
+}
+.login{
+    /* border: 1px solid white; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-btn{
+    width: 60%;
+    height: 6vh;
+    font-size: 1.0rem;
+    margin: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 2rem 2rem;
+}
+#cancel-btn{
+    margin-bottom: 6rem;
+    width: 50%;
+    height: 6vh;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: white;
+
+}
+
+
