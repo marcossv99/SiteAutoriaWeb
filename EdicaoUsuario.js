@@ -15,6 +15,9 @@ const EdicaoUsuario = ({ dadosUsuario, onCancelar }) => {
   const tratarEdicao = () => {
     //atualizar os dados do localstorage
     localStorage.setItem("usuario", JSON.stringify(usuarioEditado));
+
+    alert("usuario salvo com sucesso!");
+
   };
 
   const tratarCancel = () => {
@@ -64,7 +67,7 @@ const EdicaoUsuario = ({ dadosUsuario, onCancelar }) => {
         />
       </label>
       <div className="botoes-edicao">
-        <button onClick={tratarAlteracao}>Salvar</button>
+        <button onClick={tratarEdicao}>Salvar</button>
         <button onClick={tratarCancel}>Cancelar</button>
         </div>
       </div>

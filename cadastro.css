@@ -20,6 +20,9 @@
     align-items: center;
     margin-bottom: -5rem;
 }
+.cadastro input{
+    color: white;
+}
 .titulo{
     border: none;
     border-bottom: 5px solid white;

@@ -10,37 +10,26 @@ const Criadouro = ({ criadouro, onSalvar, setOpcao }) => {
   const [imagemURL, setImagemURL] = useState(null);
 
   const tratarClick = () => {
-    // Lógica para salvar os dados no localStorage
     const novoCriadouro = {
-
       especie,
       ambiente,
       tempo,
       pesoInicial,
       imagem,
     };
-
-    // Recuperar dados existentes do localStorage (se houver)
-    const criadourosAntigos =
-      JSON.parse(localStorage.getItem("criadouros")) || [];
-
-    // Adicionar o novo criadouro à lista existente
+    const criadourosAntigos = JSON.parse(localStorage.getItem("criadouros")) || [];
     const novaListaCriadouros = [...criadourosAntigos, novoCriadouro];
-
-    // Salvar a nova lista no localStorage
     localStorage.setItem("criadouros", JSON.stringify(novaListaCriadouros));
-
     onSalvar(novoCriadouro);
-    // Limpar os campos do formulário após enviar
     setEspecie("");
     setAmbiente("");
     setTempo("");
     setPesoInicial("");
     setImagem(null);
     setImagemURL(null);
-    setOpcao(null);
-
     alert("Dados salvos com sucesso!");
+    setOpcao(null);  // Adicionado para voltar ao componente Home
+
   };
 
   const tratarImagem = (e) => {
@@ -57,20 +46,15 @@ const Criadouro = ({ criadouro, onSalvar, setOpcao }) => {
       setImagem(null);
       setImagemURL(null);
     }
-    // setImagemURL(URL.createObjectURL(file));
   };
 
   const tratarCancel = () => {
-    //limpa os campos do formulario
-    if (criadouro) {
-      setEspecie("");
-      setAmbiente("");
-      setTempo("");
-      setPesoInicial("");
-      setImagem(null);
-      setImagemURL(null);
-    }
-    setOpcao(null)
+    setEspecie("");
+    setAmbiente("");
+    setTempo("");
+    setPesoInicial("");
+    setImagem(null);
+    setImagemURL(null);
   };
 
   return (
@@ -138,7 +122,6 @@ const Criadouro = ({ criadouro, onSalvar, setOpcao }) => {
               Enviar
             </button>
             <button
-        
               type="button"
               onClick={tratarCancel}
             >

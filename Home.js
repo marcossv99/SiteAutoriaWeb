@@ -25,7 +25,7 @@ const Home = ({ usuario }) => {
   };
   const editarCriadouro = (index) => {
     setCriadouroEditando(index);
-    setPaginaAtual("criadouro");
+    setOpcao("criadouro");
   };
   const adicionarRacao = () => {
     setOpcao("racao");
@@ -62,25 +62,29 @@ const Home = ({ usuario }) => {
   const adicionarTanque = () => {
     setOpcao("tanque");
   };
+  
   return (
     <div class="container-home">
       {opcao === "criadouro" && (
         <Criadouro
           criadouro={criadouros[criadouroEditando]}
+          onSalvar={salvarCriadouro}
+          setOpcao={setOpcao}
         />
       )}
+
       {opcao === "banco" && (
-        <Banco 
-        criadouros={criadouros}
-        setCriadouros={setCriadouros}
-        editarCriadouro={editarCriadouro}
-        voltarParaHome={voltarParaHome}
+        <Banco
+          criadouros={criadouros}
+          setCriadouros={setCriadouros}
+          editarCriadouro={editarCriadouro}
+          voltarParaHome={voltarParaHome}
         />
       )}
       {opcao === "racao" && <Racao voltarParaHome={voltarParaHome} />}
       {opcao === "remedio" && <Remedio voltarParaHome={voltarParaHome} />}
       {opcao === "tanque" && <Tanque voltarParaHome={voltarParaHome} />}
-      {opcao === "usuario" &&( 
+      {opcao === "usuario" && (
         <Usuario voltarParaHome={voltarParaHome} usuario={usuario} />
       )}
       {paginaAtual === "home" && (
@@ -96,12 +100,9 @@ const Home = ({ usuario }) => {
               <label>+</label>
             </button>
             <div className="add-buttons">
-              <button onClick={adicionarRemedio} id="add-remedio">
-              </button>
-              <button onClick={adicionarRacao} id="add-racao">
-              </button>
-              <button onClick={adicionarTanque} id="add-tanque">
-              </button>
+              <button onClick={adicionarRemedio} id="add-remedio"></button>
+              <button onClick={adicionarRacao} id="add-racao"></button>
+              <button onClick={adicionarTanque} id="add-tanque"></button>
             </div>
             <div class="menu-op2">
               <h2>Personalize</h2>
@@ -127,7 +128,7 @@ const Home = ({ usuario }) => {
       {paginaAtual === "personalizar" && (
         <Personalize voltarParaHome={voltarParaHome} />
       )}
-      {paginaAtual === "usuario" && <Usuario usuario={usuario}  />}
+      {paginaAtual === "usuario" && <Usuario usuario={usuario} />}
     </div>
   );
 };
